@@ -3,9 +3,9 @@ import styles from './Hero.module.css'
 
 const roles = [
   'Senior QA Engineer',
-  'Blockchain Tester',
-  'Smart Contract Auditor',
-  'Software Quality Lead',
+  'Smart Contract Engineer',
+  'Web3 Quality Lead',
+  'DeFi Test Architect',
 ]
 
 export default function Hero() {
@@ -53,18 +53,18 @@ export default function Hero() {
 
         <div className={styles.stats}>
           <div className={styles.stat}>
-            <span className={styles.statNum}>5+</span>
+            <span className={styles.statNum}>12+</span>
             <span className={styles.statLabel}>Years Experience</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.stat}>
-            <span className={styles.statNum}>20+</span>
-            <span className={styles.statLabel}>Projects Delivered</span>
+            <span className={styles.statNum}>4</span>
+            <span className={styles.statLabel}>Companies</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.stat}>
-            <span className={styles.statNum}>10+</span>
-            <span className={styles.statLabel}>Smart Contracts Audited</span>
+            <span className={styles.statNum}>Web3</span>
+            <span className={styles.statLabel}>Current Focus</span>
           </div>
         </div>
       </div>

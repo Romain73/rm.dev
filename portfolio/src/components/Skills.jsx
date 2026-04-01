@@ -1,27 +1,50 @@
-import styles from './Skills.module.css'
+import styles from "./Skills.module.css";
 
 const categories = [
   {
-    name: 'Blockchain & Web3',
-    icon: '⬡',
-    skills: ['Solidity', 'Hardhat', 'Foundry', 'Ethers.js', 'Web3.js', 'The Graph'],
+    name: "Blockchain & Web3",
+    icon: "⬡",
+    skills: [
+      "Smart Contracts",
+      "DeFi Vaults",
+      "viem",
+      "Foundry",
+      "On-chain Data Reconciliation",
+      "Staking Infrastructure",
+    ],
   },
   {
-    name: 'Testing & QA',
-    icon: '✓',
-    skills: ['Cypress', 'Playwright', 'Jest', 'Mocha', 'Chai', 'Selenium'],
+    name: "Testing & QA",
+    icon: "✓",
+    skills: [
+      "Cypress",
+      "Cucumber (BDD)",
+      "WebdriverIO",
+      "Selenium",
+      "E2E Testing",
+      "Transaction Lifecycle Testing",
+    ],
   },
   {
-    name: 'CI/CD & Tools',
-    icon: '⚙',
-    skills: ['GitHub Actions', 'Docker', 'Postman', 'JIRA', 'Grafana', 'Datadog'],
+    name: "CI/CD & Operations",
+    icon: "⚙",
+    skills: [
+      "GitHub",
+      "GitLab",
+      "Cypress Cloud",
+      "incident.io",
+      "Docker",
+      "Incident Response",
+      "Performance Optimization",
+      "Test Parallelization",
+    ],
   },
   {
-    name: 'Languages',
-    icon: '</>',
-    skills: ['JavaScript', 'TypeScript', 'Python', 'Bash', 'Solidity'],
+    name: "Languages",
+    icon: "</>",
+    skills: ["JavaScript", "TypeScript"],
   },
-]
+];
 
 export default function Skills() {
   return (
@@ -40,8 +63,10 @@ export default function Skills() {
                 <h3 className={styles.catName}>{cat.name}</h3>
               </div>
               <div className={styles.pills}>
-                {cat.skills.map(skill => (
-                  <span key={skill} className={styles.pill}>{skill}</span>
+                {cat.skills.map((skill) => (
+                  <span key={skill} className={styles.pill}>
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
@@ -49,5 +74,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
