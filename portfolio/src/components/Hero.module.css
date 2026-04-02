@@ -39,6 +39,16 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 24px rgba(0, 198, 255, 0.2);
+}
+
 .greeting {
   font-size: 1rem;
   font-weight: 500;
