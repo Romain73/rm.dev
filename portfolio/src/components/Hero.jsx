@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
+import photo from "../assets/Photo RM.jpeg";
 
 const roles = [
   "Senior QA Engineer",
@@ -40,6 +41,7 @@ export default function Hero() {
       <div className={styles.blob2} />
 
       <div className={styles.content}>
+        <img src={photo} alt="Romain Mercer" className={styles.photo} />
         <p className={styles.greeting}>Hello, I'm</p>
         <h1 className={styles.name}>Romain Mercer</h1>
         <div className={styles.roleWrapper}>
