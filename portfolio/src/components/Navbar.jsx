@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
 
-const links = ['Experience', 'Skills', 'Contact']
+const links = ['About', 'Experience', 'Skills', 'Contact']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)

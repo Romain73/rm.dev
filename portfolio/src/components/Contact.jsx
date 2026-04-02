@@ -1,6 +1,25 @@
+import { useState } from 'react'
 import styles from './Contact.module.css'
 
 export default function Contact() {
+  const [status, setStatus] = useState('idle')
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    setStatus('sending')
+    const res = await fetch('https://formspree.io/f/xzdkavpd', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(e.target),
+    })
+    if (res.ok) {
+      setStatus('sent')
+      e.target.reset()
+    } else {
+      setStatus('error')
+    }
+  }
+
   return (
     <section id="contact" className={styles.section}>
       <div className="container">
@@ -13,22 +32,24 @@ export default function Contact() {
         </div>
 
         <div className={styles.card}>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.row}>
               <div className={styles.field}>
                 <label className={styles.label2}>Name</label>
-                <input className={styles.input} type="text" placeholder="Your name" />
+                <input className={styles.input} type="text" name="name" placeholder="Your name" required />
               </div>
               <div className={styles.field}>
                 <label className={styles.label2}>Email</label>
-                <input className={styles.input} type="email" placeholder="your@email.com" />
+                <input className={styles.input} type="email" name="email" placeholder="your@email.com" required />
               </div>
             </div>
             <div className={styles.field}>
               <label className={styles.label2}>Message</label>
-              <textarea className={styles.textarea} rows={5} placeholder="What's on your mind?" />
+              <textarea className={styles.textarea} name="message" rows={5} placeholder="What's on your mind?" required />
             </div>
-            <button type="submit" className={styles.btn}>Send Message</button>
+            <button type="submit" className={styles.btn} disabled={status === 'sending'}>
+              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent!' : status === 'error' ? 'Error — try again' : 'Send Message'}
+            </button>
           </form>
 
           <div className={styles.divider} />
@@ -38,7 +59,7 @@ export default function Contact() {
               <span className={styles.socialIcon}>in</span>
               <span>LinkedIn</span>
             </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer" className={styles.social}>
+            <a href="https://github.com/Romain73" target="_blank" rel="noreferrer" className={styles.social}>
               <span className={styles.socialIcon}>gh</span>
               <span>GitHub</span>
             </a>

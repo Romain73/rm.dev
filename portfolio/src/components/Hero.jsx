@@ -1,35 +1,38 @@
-import { useEffect, useState } from 'react'
-import styles from './Hero.module.css'
+import { useEffect, useState } from "react";
+import styles from "./Hero.module.css";
 
 const roles = [
-  'Senior QA Engineer',
-  'Smart Contract Engineer',
-  'Web3 Quality Lead',
-  'DeFi Test Architect',
-]
+  "Senior QA Engineer",
+  "Software Quality Engineer",
+  "Web3 Quality Lead",
+  "DeFi Test Architect",
+];
 
 export default function Hero() {
-  const [roleIndex, setRoleIndex] = useState(0)
-  const [displayed, setDisplayed] = useState('')
-  const [deleting, setDeleting] = useState(false)
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [displayed, setDisplayed] = useState("");
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const current = roles[roleIndex]
-    let timeout
+    const current = roles[roleIndex];
+    let timeout;
 
     if (!deleting && displayed.length < current.length) {
-      timeout = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 60)
+      timeout = setTimeout(
+        () => setDisplayed(current.slice(0, displayed.length + 1)),
+        60,
+      );
     } else if (!deleting && displayed.length === current.length) {
-      timeout = setTimeout(() => setDeleting(true), 2200)
+      timeout = setTimeout(() => setDeleting(true), 2200);
     } else if (deleting && displayed.length > 0) {
-      timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35)
+      timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35);
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false)
-      setRoleIndex((roleIndex + 1) % roles.length)
+      setDeleting(false);
+      setRoleIndex((roleIndex + 1) % roles.length);
     }
 
-    return () => clearTimeout(timeout)
-  }, [displayed, deleting, roleIndex])
+    return () => clearTimeout(timeout);
+  }, [displayed, deleting, roleIndex]);
 
   return (
     <section id="hero" className={styles.hero}>
@@ -47,8 +50,12 @@ export default function Hero() {
           Software · Blockchain · Smart Contracts
         </p>
         <div className={styles.actions}>
-          <a href="#experience" className={styles.btnPrimary}>View Experience</a>
-          <a href="#contact" className={styles.btnSecondary}>Get in Touch</a>
+          <a href="#experience" className={styles.btnPrimary}>
+            View Experience
+          </a>
+          <a href="#contact" className={styles.btnSecondary}>
+            Get in Touch
+          </a>
         </div>
 
         <div className={styles.stats}>
@@ -73,5 +80,5 @@ export default function Hero() {
         <span />
       </div>
     </section>
-  )
+  );
 }
