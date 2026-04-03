@@ -41,7 +41,7 @@ export default function Hero() {
       <div className={styles.blob2} />
 
       <div className={styles.content}>
-        <img src={photo} alt="Romain Mercer" className={styles.photo} />
+        <img src={photo} alt="Romain Mercer, Senior QA Engineer" className={styles.photo} />
         <p className={styles.greeting}>Hello, I'm</p>
         <h1 className={styles.name}>Romain Mercer</h1>
         <div className={styles.roleWrapper}>
