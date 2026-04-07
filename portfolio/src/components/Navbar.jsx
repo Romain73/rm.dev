@@ -5,6 +5,7 @@ const links = ['About', 'Experience', 'Skills', 'Projects', 'Contact']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -12,12 +13,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [open])
+
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
-        <a href="#hero" className={styles.logo}>
+        <a href="#hero" className={styles.logo} onClick={() => setOpen(false)}>
           <span className={styles.logoAccent}>R</span>M
         </a>
+
         <ul className={styles.links}>
           {links.map(link => (
             <li key={link}>
@@ -27,7 +34,36 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        <button
+          className={`${styles.burger} ${open ? styles.burgerOpen : ''}`}
+          onClick={() => setOpen(o => !o)}
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
+
+      {open && (
+        <div className={styles.mobileMenu}>
+          <ul className={styles.mobileLinks}>
+            {links.map(link => (
+              <li key={link}>
+                <a
+                  href={`#${link.toLowerCase()}`}
+                  className={styles.mobileLink}
+                  onClick={() => setOpen(false)}
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   )
 }

@@ -32,6 +32,7 @@ export default function Projects() {
         <div className={styles.grid}>
           {projects.map((project) => (
             <div key={project.id} className={styles.card}>
+              <span className={styles.badge}>WIP</span>
               <img
                 src={project.image}
                 alt={project.title}
