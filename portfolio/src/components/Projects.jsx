@@ -9,7 +9,7 @@ const projects = [
     description:
       'A CLI tool that automatically injects data-testid attributes into every input and button across your codebase — making your app instantly automation-ready without manual tagging.',
     image: testidImg,
-    link: '#',
+    link: 'https://github.com/Romain73/data-testid-injector',
   },
   {
     id: 2,
@@ -41,7 +41,12 @@ export default function Projects() {
               <div className={styles.content}>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.description}>{project.description}</p>
-                <a href={project.link} className={styles.button}>
+                <a
+                  href={project.link}
+                  className={styles.button}
+                  target={project.link !== '#' ? '_blank' : undefined}
+                  rel={project.link !== '#' ? 'noopener noreferrer' : undefined}
+                >
                   View Project
                 </a>
               </div>
