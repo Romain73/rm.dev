@@ -28,8 +28,10 @@ export default function Hero() {
     } else if (deleting && displayed.length > 0) {
       timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35);
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false);
-      setRoleIndex((roleIndex + 1) % roles.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setRoleIndex((i) => (i + 1) % roles.length);
+      }, 0);
     }
 
     return () => clearTimeout(timeout);
