@@ -17,8 +17,7 @@ const projects = [
     description:
       "A static analysis tool that audits your web app's testability score — flagging missing selectors, unstable locators, and automation blind spots before they become flaky tests.",
     image: scannerImg,
-    link: '#',
-    wip: true,
+    link: 'https://github.com/Romain73/testability-scanner',
   },
 ]
 
