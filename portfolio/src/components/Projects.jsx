@@ -46,7 +46,7 @@ export default function Projects() {
                   className={styles.button}
                   target={project.link !== '#' ? '_blank' : undefined}
                   rel={project.link !== '#' ? 'noopener noreferrer' : undefined}
-                >
+                  data-testid="Projects-a-0">
                   View Project
                 </a>
               </div>
@@ -55,5 +55,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

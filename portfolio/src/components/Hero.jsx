@@ -41,7 +41,6 @@ export default function Hero() {
     <section id="hero" className={styles.hero}>
       <div className={styles.blob1} />
       <div className={styles.blob2} />
-
       <div className={styles.content}>
         <img src={photo} alt="Romain Mercer, Senior QA Engineer" className={styles.photo} />
         <p className={styles.greeting}>Hello, I'm</p>
@@ -54,10 +53,10 @@ export default function Hero() {
           Software · Blockchain · Smart Contracts
         </p>
         <div className={styles.actions}>
-          <a href="#experience" className={styles.btnPrimary}>
+          <a href="#experience" className={styles.btnPrimary} data-testid="Hero-a-0">
             View Experience
           </a>
-          <a href="#contact" className={styles.btnSecondary}>
+          <a href="#contact" className={styles.btnSecondary} data-testid="Hero-a-1">
             Get in Touch
           </a>
         </div>
@@ -79,7 +78,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
       <div className={styles.scrollHint}>
         <span />
       </div>
