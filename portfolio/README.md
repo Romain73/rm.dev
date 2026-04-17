@@ -1,3 +1,30 @@
+# Romain Mercer — Portfolio
+
+## Run locally
+
+**Prerequisites:** Node.js 18+
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+**Other commands:**
+
+```bash
+npm run build   # Production build
+npm run preview # Preview the production build locally
+npm run lint    # Run ESLint
+npm run format  # Format all source files with Prettier
+```
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
