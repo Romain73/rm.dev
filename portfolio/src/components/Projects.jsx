@@ -1,6 +1,8 @@
 import styles from './Projects.module.css'
 import testidImg from '../assets/project-testid-injector.png'
 import scannerImg from '../assets/project-testability-scanner.png'
+import e2eImg from '../assets/e2etests.png'
+import web3SandboxImg from '../assets/Web3sandbox.png'
 
 const projects = [
   {
@@ -18,6 +20,24 @@ const projects = [
       "A static analysis tool that audits your web app's testability score — flagging missing selectors, unstable locators, and automation blind spots before they become flaky tests.",
     image: scannerImg,
     link: 'https://github.com/Romain73/testability-scanner',
+  },
+  {
+    id: 3,
+    title: 'End-to-end Tests',
+    description:
+      'A comprehensive end-to-end test suite covering critical user flows — built to catch regressions early and ship with confidence.',
+    image: e2eImg,
+    link: '#',
+    wip: true,
+  },
+  {
+    id: 4,
+    title: 'Web3 E2E Testing Sandbox',
+    description:
+      'A sandbox environment for running end-to-end tests against Web3 applications — simulating wallet interactions, on-chain transactions, and DeFi flows.',
+    image: web3SandboxImg,
+    link: '#',
+    wip: true,
   },
 ]
 
