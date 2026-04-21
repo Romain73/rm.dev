@@ -5,7 +5,16 @@ const experiences = [
     title: 'Senior QA – Smart Contract Engineer',
     company: 'Kiln',
     period: 'Oct. 2024 – Present',
-    tags: ['Cypress', 'Foundry', 'viem', 'Cucumber', 'TypeScript', 'GitHub Actions', 'incident.io'],
+    tags: [
+      'Cypress',
+      'Foundry',
+      'viem',
+      'Playwright',
+      'Cucumber',
+      'TypeScript',
+      'GitHub Actions',
+      'incident.io',
+    ],
     description:
       'Ensuring on-chain data integrity and protocol security for Web3 ecosystems (Kiln Connect). Designing automation frameworks to reconcile on-chain vs. API data for DeFi Vaults, full E2E transaction lifecycle testing, BDD architecture with Cypress Cloud, and DevOps/incident management via GitHub Actions and incident.io.',
   },
@@ -13,15 +22,35 @@ const experiences = [
     title: 'QA Engineer',
     company: 'Dashlane',
     period: 'Nov. 2017 – Aug. 2024',
-    tags: ['JavaScript', 'Selenium', 'Cucumber', 'WebdriverIO', 'Bamboo', 'Docker', 'JIRA', 'Confluence', 'Xray'],
+    tags: [
+      'JavaScript',
+      'Selenium',
+      'Cucumber',
+      'WebdriverIO',
+      'Appium',
+      'Bamboo',
+      'Docker',
+      'JIRA',
+      'Confluence',
+      'Xray',
+    ],
     description:
-      'Led E2E automation for web extensions: set up the automation framework and CI pipeline, and expanded end-to-end test coverage. In parallel, embedded as QA analyst within product teams — established QA processes, bug management, Agile/Scrum ceremonies, and managed external testers for structured test plans.',
+      'Led E2E automation for web extensions and mobile applications: set up the automation framework and CI pipeline, and expanded end-to-end test coverage. In parallel, embedded as QA analyst within product teams — established QA processes, bug management, Agile/Scrum ceremonies, and managed external testers for structured test plans.',
   },
   {
     title: 'QA Engineer – Team Leader',
     company: 'Oodrive',
     period: 'May 2015 – Oct. 2017',
-    tags: ['Ranorex', 'C#', 'Java', 'Jenkins', 'JIRA', 'Zephyr', 'Git'],
+    tags: [
+      'Ranorex',
+      'Appium',
+      'C#',
+      'Java',
+      'Jenkins',
+      'JIRA',
+      'Zephyr',
+      'Git',
+    ],
     description:
       'Within a cloud computing company, worked across desktop, mobile, and web client teams: designed and executed test plans based on technical specs and customer bugs, performed manual and automated testing with Ranorex (C# & Java scripts), and reported defects to the R&D team. From April 2016, led a QA team of 4 — coordinating priorities, relaying information, and acting as the liaison between technical leadership, project managers, and the team.',
   },
@@ -58,8 +87,10 @@ export default function Experience() {
                 </div>
                 <p className={styles.description}>{exp.description}</p>
                 <div className={styles.tags}>
-                  {exp.tags.map(tag => (
-                    <span key={tag} className={styles.tag}>{tag}</span>
+                  {exp.tags.map((tag) => (
+                    <span key={tag} className={styles.tag}>
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>
