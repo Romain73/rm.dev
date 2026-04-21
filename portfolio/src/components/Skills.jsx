@@ -1,50 +1,52 @@
-import styles from "./Skills.module.css";
+import styles from './Skills.module.css'
 
 const categories = [
   {
-    name: "Blockchain & Web3",
-    icon: "⬡",
+    name: 'Blockchain & Web3',
+    icon: '⬡',
     skills: [
-      "Smart Contracts",
-      "DeFi Vaults",
-      "viem",
-      "Foundry",
-      "On-chain Data Reconciliation",
-      "Staking Infrastructure",
+      'Smart Contracts',
+      'DeFi Vaults',
+      'viem',
+      'Foundry',
+      'On-chain Data Reconciliation',
+      'Staking Infrastructure',
     ],
   },
   {
-    name: "Testing & QA",
-    icon: "✓",
+    name: 'Testing & QA',
+    icon: '✓',
     skills: [
-      "Cypress",
-      "Cucumber (BDD)",
-      "WebdriverIO",
-      "Selenium",
-      "E2E Testing",
-      "Transaction Lifecycle Testing",
+      'Cypress',
+      'Cucumber (BDD)',
+      'WebdriverIO',
+      'Selenium',
+      'Playwright',
+      'Appium',
+      'E2E Testing',
+      'Transaction Lifecycle Testing',
     ],
   },
   {
-    name: "CI/CD & Operations",
-    icon: "⚙",
+    name: 'CI/CD & Operations',
+    icon: '⚙',
     skills: [
-      "GitHub",
-      "GitLab",
-      "Cypress Cloud",
-      "incident.io",
-      "Docker",
-      "Incident Response",
-      "Performance Optimization",
-      "Test Parallelization",
+      'GitHub',
+      'GitLab',
+      'Cypress Cloud',
+      'incident.io',
+      'Docker',
+      'Incident Response',
+      'Performance Optimization',
+      'Test Parallelization',
     ],
   },
   {
-    name: "Languages",
-    icon: "</>",
-    skills: ["JavaScript", "TypeScript"],
+    name: 'Languages',
+    icon: '</>',
+    skills: ['JavaScript', 'TypeScript'],
   },
-];
+]
 
 export default function Skills() {
   return (
@@ -74,5 +76,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  );
+  )
 }
