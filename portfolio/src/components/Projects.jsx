@@ -27,8 +27,7 @@ const projects = [
     description:
       'A comprehensive end-to-end test suite covering critical user flows — built to catch regressions early and ship with confidence.',
     image: e2eImg,
-    link: '#',
-    wip: true,
+    link: 'https://github.com/Romain73/e2e-rmdev',
   },
   {
     id: 4,
