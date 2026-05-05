@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Senior QA – Smart Contract Engineer",
+    "company": "Kiln",
+    "period": "Oct. 2024 – Present",
+    "tags": [
+      "Cypress",
+      "Foundry",
+      "viem",
+      "Playwright",
+      "Cucumber",
+      "TypeScript",
+      "GitHub Actions",
+      "incident.io"
+    ],
+    "description": "Ensuring on-chain data integrity and protocol security for Web3 ecosystems (Kiln Connect). Designing automation frameworks to reconcile on-chain vs. API data for DeFi Vaults, full E2E transaction lifecycle testing, BDD architecture with Cypress Cloud, and DevOps/incident management via GitHub Actions and incident.io."
+  },
+  {
+    "title": "QA Engineer",
+    "company": "Dashlane",
+    "period": "Nov. 2017 – Aug. 2024",
+    "tags": [
+      "JavaScript",
+      "Selenium",
+      "Cucumber",
+      "WebdriverIO",
+      "Appium",
+      "Bamboo",
+      "Docker",
+      "JIRA",
+      "Confluence",
+      "Xray"
+    ],
+    "description": "Led E2E automation for web extensions and mobile applications: set up the automation framework and CI pipeline, and expanded end-to-end test coverage. In parallel, embedded as QA analyst within product teams — established QA processes, bug management, Agile/Scrum ceremonies, and managed external testers for structured test plans."
+  },
+  {
+    "title": "QA Engineer – Team Leader",
+    "company": "Oodrive",
+    "period": "May 2015 – Oct. 2017",
+    "tags": ["Ranorex", "Appium", "C#", "Java", "Jenkins", "JIRA", "Zephyr", "Git"],
+    "description": "Within a cloud computing company, worked across desktop, mobile, and web client teams: designed and executed test plans based on technical specs and customer bugs, performed manual and automated testing with Ranorex (C# & Java scripts), and reported defects to the R&D team. From April 2016, led a QA team of 4 — coordinating priorities, relaying information, and acting as the liaison between technical leadership, project managers, and the team."
+  },
+  {
+    "title": "Verification Engineer",
+    "company": "Bull",
+    "period": "Nov. 2012 – May 2015",
+    "tags": ["C++", "C", "SystemC", "Verilog", "VSIM", "DVE", "Unix/Linux"],
+    "description": "Functional verification and quality assurance of a Crossbar block in an ASIC designed for a supercomputer. Built the automated verification environment in C++, C, and SystemC — including transmitters, monitors, test function calls, predictions, and assertions. Wrote the test plan, executed verification scenarios (including non-random), measured RTL coverage in BPSL, and performed fault injection (bit flips, invalid security codes, etc.)."
+  }
+]

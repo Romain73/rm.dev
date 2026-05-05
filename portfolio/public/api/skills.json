@@ -1,0 +1,43 @@
+[
+  {
+    "category": "Blockchain & Web3",
+    "skills": [
+      "Smart Contracts",
+      "DeFi Vaults",
+      "viem",
+      "Foundry",
+      "On-chain Data Reconciliation",
+      "Staking Infrastructure"
+    ]
+  },
+  {
+    "category": "Testing & QA",
+    "skills": [
+      "Cypress",
+      "Cucumber (BDD)",
+      "WebdriverIO",
+      "Selenium",
+      "Playwright",
+      "Appium",
+      "E2E Testing",
+      "Transaction Lifecycle Testing"
+    ]
+  },
+  {
+    "category": "CI/CD & Operations",
+    "skills": [
+      "GitHub",
+      "GitLab",
+      "Cypress Cloud",
+      "incident.io",
+      "Docker",
+      "Incident Response",
+      "Performance Optimization",
+      "Test Parallelization"
+    ]
+  },
+  {
+    "category": "Languages",
+    "skills": ["JavaScript", "TypeScript"]
+  }
+]

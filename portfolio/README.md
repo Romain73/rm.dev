@@ -23,6 +23,10 @@ npm run lint    # Run ESLint
 npm run format  # Format all source files with Prettier
 ```
 
+## API
+
+The portfolio content is available as a static JSON API at `/api/projects.json`, `/api/skills.json`, `/api/experience.json`, and `/api/status.json`. See [`docs/api.md`](docs/api.md) for details.
+
 ---
 
 # React + Vite
