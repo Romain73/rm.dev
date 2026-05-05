@@ -3,6 +3,7 @@ import testidImg from '../assets/project-testid-injector.png'
 import scannerImg from '../assets/project-testability-scanner.png'
 import e2eImg from '../assets/e2etests.png'
 import web3SandboxImg from '../assets/Web3sandbox.png'
+import AppiumRM from '../assets/AppiumRM.png'
 
 const projects = [
   {
@@ -35,8 +36,16 @@ const projects = [
     description:
       'A sandbox environment for running end-to-end tests against Web3 applications — simulating wallet interactions, on-chain transactions, and DeFi flows.',
     image: web3SandboxImg,
-    link: '#',
+    link: 'https://github.com/Romain73/web3-sandbox',
+  },
+  {
+    id: 5,
+    title: 'Mobile E2E Tests',
+    description:
+      'A comprehensive end-to-end test suite covering critical user flows',
+    image: AppiumRM,
     wip: true,
+    link: '#',
   },
 ]
 
