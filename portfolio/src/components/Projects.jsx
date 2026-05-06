@@ -42,10 +42,10 @@ const projects = [
     id: 5,
     title: 'Mobile E2E Tests',
     description:
-      'A comprehensive end-to-end test suite covering critical user flows',
+      'A comprehensive mobile end-to-end test suite covering critical user flows (for now only android)',
     image: AppiumRM,
     wip: true,
-    link: '#',
+    link: 'https://github.com/Romain73/mobile-automation',
   },
 ]
 
